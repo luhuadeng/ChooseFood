@@ -1,6 +1,5 @@
 package com.hnevc.choosefood;
 
-import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    List<Food> foodlist = new ArrayList<>();
+    List<Food> foodlist;
     EditText mEtUserName;
     RadioGroup mRgGender;
     CheckBox mCbFish,mCbHot,mCbSour;
@@ -118,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //TODO 切换到下一个显示界面
                 Toast.makeText(MainActivity.this, selectedFoodList.get(index).toString(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -143,23 +143,6 @@ public class MainActivity extends AppCompatActivity {
 
     //初始化数据
     private void initData(){
-        //获取食物名称数组
-        String[] foodNames = getResources().getStringArray(R.array.foodName);
-        String[] foodPrices = getResources().getStringArray(R.array.foodPrice);
-        String[] foodHots = getResources().getStringArray(R.array.hot);
-        String[] foodSours = getResources().getStringArray(R.array.sour);
-        String[] foodFishs = getResources().getStringArray(R.array.fish);
-        TypedArray pices = getResources().obtainTypedArray(R.array.pics);
-        //将数组中的数据，转变为链表中的数据
-        for(int i=0;i<foodNames.length;i++){
-            Food food = new Food();
-            food.setFoodName(foodNames[i]);
-            food.setFoodPrice(Float.parseFloat(foodPrices[i]));
-            food.setFish(foodFishs[i].equals("鱼")?true:false);
-            food.setHot(foodHots[i].equals("辣")?true:false);
-            food.setSour(foodSours[i].equals("酸")?true:false);
-            food.setPics(pices.getDrawable(i));
-            foodlist.add(food);
-        }
+        foodlist = new DataUtil(this).getFoodList();
     }
 }

@@ -12,7 +12,26 @@ public class Food {
     private  boolean hot;
     private  boolean fish;
     private  boolean sour;
-    private Drawable pics;
+    private  String detail;
+    private  Drawable pics;
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public Food(String foodName, float foodPrice, boolean hot, boolean fish, boolean sour, String detail, Drawable pics) {
+        this.foodName = foodName;
+        this.foodPrice = foodPrice;
+        this.hot = hot;
+        this.fish = fish;
+        this.sour = sour;
+        this.detail = detail;
+        this.pics = pics;
+    }
 
     @Override
     public String toString() {
