@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ChooseFood</string>
+    <string-array name="foodName">
+        <item>桂林米粉</item>
+        <item>麻辣香锅</item>
+        <item>水煮鱼</item>
+        <item>麻辣火锅</item>
+        <item>清蒸鲈鱼</item>
+        <item>上汤娃娃菜</item>
+        <item>红烧肉</item>
+        <item>木须肉</item>
+        <item>酸菜牛肉面</item>
+        <item>西芹炒百合</item>
+        <item>酸辣汤</item>
+    </string-array>
+    <string-array name="foodPrice">
+        <item>15</item>
+        <item>55</item>
+        <item>48</item>
+        <item>80</item>
+        <item>68</item>
+        <item>28</item>
+        <item>60</item>
+        <item>40</item>
+        <item>35</item>
+        <item>38</item>
+        <item>40</item>
+
+    </string-array>
+    <string-array name="hot">
+        <item>辣</item>
+        <item>辣</item>
+        <item>辣</item>
+        <item>辣</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>辣</item>
+        <item></item>
+        <item>辣</item>
+    </string-array>
+    <string-array name="fish">
+        <item></item>
+        <item></item>
+        <item>鱼</item>
+        <item></item>
+        <item>鱼</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+    <string-array name="sour">
+        <item>酸</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>酸</item>
+        <item></item>
+        <item>酸</item>
+    </string-array>
+
+    <array name="pics">
+        <item>@drawable/guilin</item>
+        <item>@drawable/malaxiangguo</item>
+        <item>@drawable/shuizhuyu</item>
+        <item>@drawable/malahuoguo</item>
+        <item>@drawable/qingzhengluyu</item>
+        <item>@drawable/shangtangwawacai</item>
+        <item>@drawable/hongshaorou</item>
+        <item>@drawable/muxurou</item>
+        <item>@drawable/suncainiuroumian</item>
+        <item>@drawable/xiqin</item>
+        <item>@drawable/suanlatang</item>
+    </array>
+</resources>
